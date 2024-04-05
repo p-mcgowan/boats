@@ -90,7 +90,7 @@ class Injector {
 
     const injectionContent = jsYaml.load(renderedString);
 
-    return deepmerge(jsonTemplate, injectionContent);
+    return deepmerge(injectionContent, jsonTemplate);
   }
 
   buildInjectRuleObject (injection: any): any {
